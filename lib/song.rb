@@ -53,7 +53,8 @@ class Song
     @@all.sort_by{ |i| i.name }
   end
   
-  def self.new_from_filename
-    split_filename = 
+  def self.new_from_filename(filename)
+    split_filename = filename.chomp(".mp3")
+  end
   
 end
